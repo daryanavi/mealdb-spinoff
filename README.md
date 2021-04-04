@@ -8,6 +8,6 @@ O design web foi feito para ser mobile friendly, como pedido na tarefa.
 
 Foi feito deploy da aplicação no Heroku, podendo ser acessado pelo link https://mealdbspinoff.herokuapp.com/.
 
-Localização dos arquivos do back-end: src/main/java.
-Localização dos arquivos do front-end: src/main/resources.
-Localização dos testes unitários: src/test/java.
+- Localização dos arquivos do back-end: src/main/java.
+- Localização dos arquivos do front-end: src/main/resources.
+- Localização dos testes unitários: src/test/java.

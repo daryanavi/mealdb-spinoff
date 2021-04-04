@@ -8,8 +8,9 @@ import org.springframework.stereotype.Component;
 import lombok.Data;
 
 /**
+ * Classe que contém as informações de um prato.
+ * 
  * @author Daryan Avi
- *
  */
 @Component
 @Data

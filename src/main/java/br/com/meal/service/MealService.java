@@ -20,8 +20,9 @@ import br.com.meal.dto.MealDTO;
 import lombok.Getter;
 
 /**
+ * Classe que contém as regras de negócio para a busca de informações do site TheMealDB.
+ * 
  * @author Daryan Avi
- *
  */
 @Service
 public class MealService {
@@ -33,6 +34,10 @@ public class MealService {
 	private List<MealDTO> meals;
 	private String lastName;
 	
+	/**
+	 * Método que realiza a busca das comidas na API do site TheMealDB, no formato JSON.
+	 * O JSON buscado é convertido para um ArrayList de MealDTO.
+	 */
 	public void requestSearch(String name) throws IOException {
 		if (name == null) {
 			name = "";

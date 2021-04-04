@@ -12,8 +12,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import br.com.meal.service.MealService;
 
 /**
+ * Classe que realiza a comunicação entre o front-end e o back-end, através de requisições HTTP.
+ * 
  * @author Daryan Avi
- *
  */
 @Controller
 public class MealController {
@@ -21,6 +22,14 @@ public class MealController {
 	@Autowired
 	private MealService service;
 	
+	/**
+	 * Método que mapeia página inicial da aplicação.
+	 * 
+	 * @param name o nome do prato a ser buscado.
+	 * @param start o número da página na listagem de pratos.
+	 * @param model o model para transferir dados ao front-end.
+	 * @return a página inicial, home.
+	 */
 	@GetMapping("/")
 	public String index(@RequestParam(required = false) String name,
 			@RequestParam(required = false) Integer start,

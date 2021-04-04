@@ -3,10 +3,6 @@
     padding: 15px 0;
 }
 
-.logo-meal-db {
-    width: 100%;
-}
-
 .upper-bar form {
     font-size: 0px;
     display: flex;
@@ -44,6 +40,10 @@
 
 .upper-bar form button:focus {
     outline: none;
+}
+
+.logo-meal-db {
+    width: 100%;
 }
 
 .meal {
@@ -91,6 +91,10 @@
 }
 
 @media screen and (max-width: 767px) {
+    .logo-meal-db {
+        text-align: center;
+    }
+
     .upper-bar form {
         justify-content: center;
         margin-top: 15px;

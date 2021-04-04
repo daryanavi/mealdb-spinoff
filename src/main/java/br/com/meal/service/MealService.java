@@ -10,6 +10,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.commons.io.IOUtils;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -50,7 +51,7 @@ public class MealService {
 		conn.setDoInput(true);
 		
 		DataInputStream data = new DataInputStream(conn.getInputStream());
-		String s = new String(data.readAllBytes());
+		String s = new String(IOUtils.toByteArray(data));
 		data.close();
 		
 		meals = new ArrayList<>();
